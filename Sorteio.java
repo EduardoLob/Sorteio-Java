@@ -17,18 +17,16 @@ public class Sorteio {
 
         y = y + 1;
 
-        System.out.println(y);
-
         for (int tentUser = 0; tentUser != y; numTentativas++){
-            System.out.println("Cite um número: ");
+            System.out.println("\nCite um número: ");
             tentUser = leia.nextInt();
 
             if (tentUser < y){
-                System.out.println("É um valor maior, tente novamente");
+                System.out.println("DICA: O número sorteado é maior, tente novamente");
             } else if (tentUser > y){
-                System.out.println("É um valor menor, tente novamente");
+                System.out.println("DICA: É um valor menor, tente novamente");
             } else {
-                System.out.println("Acertou, Muito bem");
+                System.out.println("\nAcertou, Muito bem");
                 System.out.printf("Você tentou: %d vezes", (numTentativas + 1));
             }
         }
